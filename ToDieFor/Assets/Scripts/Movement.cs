@@ -6,7 +6,10 @@ public class Movement : MonoBehaviour
 {
     Rigidbody rb;
     public float moveSpeed = 10f;
-   
+    public float mouseSensivity = 100f;
+
+    public Transform playerBody;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,10 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensivity * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensivity * Time.deltaTime;
+
+        playerBody.Rotate(Vector3.up * mouseX);
 
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
@@ -47,6 +54,7 @@ public class Movement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    //https://youtu.be/_QajrabyTJc?si=JaUfdeVdYZ8RaGg9&t=488
 }
 
 
