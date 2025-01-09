@@ -4,26 +4,47 @@ using UnityEngine;
 
 public class CamCtrl : MonoBehaviour
 {
-
-    public float mouseSensitivity = 100f;
+    public float mouseSensivity = 750f;
+    float xRotation = 0f;
 
     public Transform playerBody;
-
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Locked; // Lock cursor in place
     }
 
     // Update is called once per frame
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensivity * Time.deltaTime * 1.7f;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensivity * Time.deltaTime;
 
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -20f, 20f);
+
+        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            UnlocK();
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            LocK();
+        }
     }
 
-    //https://youtu.be/_QajrabyTJc?si=uhvScfi7ghp9dZZv&t=495
+    private void UnlocK()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    private void LocK()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 }

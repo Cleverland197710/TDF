@@ -6,7 +6,8 @@ public class Movement : MonoBehaviour
 {
     Rigidbody rb;
     public float moveSpeed = 10f;
-    public float mouseSensivity = 100f;
+  //public float mouseSensivity = 100f;
+  //float xRotation = 0f;
 
     public Transform playerBody;
 
@@ -14,17 +15,25 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Cursor.lockState = CursorLockMode.Locked; // Lock cursor in place
+       //ursor.lockState = CursorLockMode.Locked; // Lock cursor in place
 
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        /*
         float mouseX = Input.GetAxis("Mouse X") * mouseSensivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensivity * Time.deltaTime;
 
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -10f, 10f);
+
+        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
+
+        */
 
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
@@ -33,6 +42,8 @@ public class Movement : MonoBehaviour
         Vector3 moveDirection = transform.right * horizontalInput + transform.forward * verticalInput;
         rb.velocity = new Vector3(moveDirection.x * moveSpeed, rb.velocity.y, moveDirection.z * moveSpeed);
 
+        /*
+          
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             UnlocK();
@@ -42,8 +53,11 @@ public class Movement : MonoBehaviour
         {
             LocK();
         }
+
+        */
     }
 
+        /*
     private void UnlocK()
     {
         Cursor.lockState = CursorLockMode.None;
@@ -53,6 +67,8 @@ public class Movement : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
+
+    */
 
     //https://youtu.be/_QajrabyTJc?si=JaUfdeVdYZ8RaGg9&t=488
 }
