@@ -9,6 +9,9 @@ public class CamCtrl : MonoBehaviour
 
     public Transform playerBody;
 
+    public float clampX = -20f;
+    public float clampY = 20f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +25,7 @@ public class CamCtrl : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensivity * Time.deltaTime;
 
         xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -20f, 20f);
+        xRotation = Mathf.Clamp(xRotation, clampX, clampY);
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
