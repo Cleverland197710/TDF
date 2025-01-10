@@ -362,6 +362,7 @@
 "Assets/Scripts/CamCtrl.cs"
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/VaultScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+
