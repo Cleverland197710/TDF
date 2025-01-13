@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
 {
     Rigidbody rb;
     public float moveSpeed = 10f;
+    public bool colliding = true;
   //public float mouseSensivity = 100f;
   //float xRotation = 0f;
 
@@ -55,22 +56,44 @@ public class Movement : MonoBehaviour
         }
 
         */
+
+        if (Input.GetKey(KeyCode.Space) && colliding)
+        { 
+            rb.AddForce(Vector3.up * 7, ForceMode.Impulse);
+            colliding = false;
+        }
     }
 
-        /*
-    private void UnlocK()
-    {
-        Cursor.lockState = CursorLockMode.None;
-    }
+    /*
+private void UnlocK()
+{
+    Cursor.lockState = CursorLockMode.None;
+}
 
-    private void LocK()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+private void LocK()
+{
+    Cursor.lockState = CursorLockMode.Locked;
+}
 
-    */
+*/
 
     //https://youtu.be/_QajrabyTJc?si=JaUfdeVdYZ8RaGg9&t=488
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Vault"))
+        {
+            colliding = true;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (CompareTag("Vault"))
+        {
+            colliding = true;
+        }
+    }
 }
 
 
