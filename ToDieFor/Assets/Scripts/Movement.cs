@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
     Rigidbody rb;
     public float moveSpeed = 10f;
-    public bool colliding = true;
+    public bool colliding = false;
   //public float mouseSensivity = 100f;
   //float xRotation = 0f;
 
@@ -59,8 +59,14 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && colliding)
         { 
-            rb.AddForce(Vector3.up * 7, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * 90, ForceMode.Impulse);
+            boost();
             colliding = false;
+        }
+
+        if (colliding == false)
+        {
+            moveSpeed = 20;
         }
     }
 
@@ -78,6 +84,12 @@ private void LocK()
 */
 
     //https://youtu.be/_QajrabyTJc?si=JaUfdeVdYZ8RaGg9&t=488
+
+    private void boost()
+    {
+        moveSpeed = 30;
+        Debug.Log("run");
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
