@@ -262,9 +262,9 @@ MonoBehaviour:
   health: 100
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
-  timeBetweenAttacks: 0
+  timeBetweenAttacks: 100
   projectile: {fileID: 0}
-  sightRange: 30
+  sightRange: 80
   attackRange: 20
   playerInSightRange: 0
   playerInAttackRange: 0

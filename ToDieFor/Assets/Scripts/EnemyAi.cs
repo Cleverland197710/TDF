@@ -5,6 +5,10 @@ using UnityEngine.AI;
 
 public class EnemyAi : MonoBehaviour
 {
+    private void OnMouseUpAsButton()
+    {
+        Debug.Log("Kill");
+    }
     public NavMeshAgent agent;
 
     public Transform player;
