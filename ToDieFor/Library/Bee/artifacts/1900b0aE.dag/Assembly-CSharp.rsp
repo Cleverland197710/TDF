@@ -370,6 +370,7 @@
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/Plate.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/Projectile.cs"
 "Assets/Scripts/Spawner.cs"
 "Assets/Scripts/VaultScript.cs"
 -langversion:9.0
