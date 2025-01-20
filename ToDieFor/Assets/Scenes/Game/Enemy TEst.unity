@@ -299,6 +299,7 @@ MonoBehaviour:
   magazineSize: 1
   bulletsPerTap: 1
   allowButtonHold: 1
+  hasPlate: 0
   fpsCam: {fileID: 1577513778}
   attackPoint: {fileID: 718471007}
   muzzleFlash: {fileID: 0}
@@ -388,6 +389,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c21514841f8f699458e24190d5c3b47a, type: 2}
+    - target: {fileID: -1188570331820870973, guid: e121e15d1960be5479c429fae58deb2b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.029
+      objectReference: {fileID: 0}
     - target: {fileID: -326909098771216998, guid: e121e15d1960be5479c429fae58deb2b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

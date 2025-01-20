@@ -17,6 +17,7 @@ public class ProjectileGunTutorial : MonoBehaviour
     public float timeBetweenShooting, spread, reloadTime, timeBetweenShots;
     public int magazineSize, bulletsPerTap;
     public bool allowButtonHold;
+    public bool hasPlate;
 
 
     int bulletsLeft, bulletsShot;
@@ -45,12 +46,19 @@ public class ProjectileGunTutorial : MonoBehaviour
         //make sure magazine is full
         bulletsLeft = magazineSize;
         readyToShoot = true;
+        hasPlate = false;
     }
+
 
 
     private void Update()
     {
         MyInput();
+
+        if (Input.GetKeyDown("q"))
+        {
+            hasPlate = true;
+        }
 
 
         //Set ammo display, if it exists :D
@@ -65,13 +73,13 @@ public class ProjectileGunTutorial : MonoBehaviour
 
 
         //Reloading 
-        if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading) Reload();
+        //if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading) Reload();
         //Reload automatically when trying to shoot without ammo
-        if (readyToShoot && shooting && !reloading && bulletsLeft <= 0) Reload();
+        //if (readyToShoot && shooting && !reloading && bulletsLeft <= 0) Reload();
 
 
         //Shooting
-        if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
+        if (readyToShoot && shooting && hasPlate && bulletsLeft > 0)
         {
             //Set bullets shot to 0
             bulletsShot = 0;
@@ -85,6 +93,7 @@ public class ProjectileGunTutorial : MonoBehaviour
     private void Shoot()
     {
         readyToShoot = false;
+        hasPlate = false;
 
 
         //Find the exact hit position using a raycast
