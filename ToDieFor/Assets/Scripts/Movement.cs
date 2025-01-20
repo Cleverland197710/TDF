@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
     Rigidbody rb;
     public float moveSpeed = 10f;
     public bool colliding = false;
+    public bool FailOrDead = false;
   //public float mouseSensivity = 100f;
   //float xRotation = 0f;
 
@@ -23,6 +25,15 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
+        /*if (FailOrDead == true)
+        {
+            GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<Rigidbody>().isKinematic = true;
+            GetComponent<Movement>().enabled = false;
+            Invoke(nameof(ReloadLevel), 1.3f);
+        }*/
 
         /*
         float mouseX = Input.GetAxis("Mouse X") * mouseSensivity * Time.deltaTime;
@@ -105,6 +116,11 @@ private void LocK()
         {
             colliding = true;
         }
+    }
+
+    void ReloadLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 

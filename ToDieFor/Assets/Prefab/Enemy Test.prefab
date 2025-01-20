@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7697461546692076573}
   - component: {fileID: 1768737710965530027}
   - component: {fileID: 5754697192520720625}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cuppa-sheet_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,9 +122,9 @@ GameObject:
   - component: {fileID: 4153965659762919839}
   - component: {fileID: 8977692837067422893}
   - component: {fileID: 1943154395482359673}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy Test
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

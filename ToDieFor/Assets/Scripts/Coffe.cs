@@ -7,6 +7,7 @@ public class Coffe : MonoBehaviour
     [SerializeField] LayerMask coffe;
     [SerializeField] LayerMask coffeLayer;
     public bool serving = false;
+    public bool fail = false;
 
     private void OnMouseUpAsButton()
     {
@@ -24,6 +25,11 @@ public class Coffe : MonoBehaviour
         if (serving == true)
         {
             Destroy(gameObject);
+        }
+
+        if (fail == true)
+        {
+
         }
 
     }
