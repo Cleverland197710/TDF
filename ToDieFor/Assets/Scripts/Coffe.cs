@@ -10,10 +10,7 @@ public class Coffe : MonoBehaviour
 
     private void OnMouseUpAsButton()
     {
-        if (serving = true)
-        {
-
-        }
+        serving = true;
     }
     // Start is called before the first frame update
     void Start()
@@ -24,14 +21,11 @@ public class Coffe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-           
+        if (serving == true)
+        {
+            Destroy(gameObject);
+        }
+
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("coffeLayer"))
-        {
-            serving = true;
-        }
-    }
 }
