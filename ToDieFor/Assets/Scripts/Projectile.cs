@@ -101,7 +101,6 @@ public class ProjectileGunTutorial : MonoBehaviour
     private void Shoot()
     {
         readyToShoot = false;
-        hasPlate = false;
 
 
         //Find the exact hit position using a raycast
