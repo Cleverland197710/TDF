@@ -5,6 +5,8 @@ using TMPro;
 
 public class ProjectileGunTutorial : MonoBehaviour
 {
+    public Dish script;
+
     //bullet 
     public GameObject bullet;
 
