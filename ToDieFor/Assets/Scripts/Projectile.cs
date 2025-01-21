@@ -20,7 +20,7 @@ public class ProjectileGunTutorial : MonoBehaviour
     public float timeBetweenShooting, spread, reloadTime, timeBetweenShots;
     public int magazineSize, bulletsPerTap;
     public bool allowButtonHold;
-    public bool hasPlate;
+    public bool hasPlate = false;
 
 
     int bulletsLeft, bulletsShot;

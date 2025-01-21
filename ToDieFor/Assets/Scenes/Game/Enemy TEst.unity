@@ -292,14 +292,14 @@ MonoBehaviour:
   bullet: {fileID: 7144981887218201125, guid: 922496d863fc18c49a4ba49fcd88280e, type: 3}
   shootForce: 80
   upwardForce: 5
-  timeBetweenShooting: 1
+  timeBetweenShooting: 2
   spread: 0
   reloadTime: 1
-  timeBetweenShots: 0
+  timeBetweenShots: 1
   magazineSize: 10000
   bulletsPerTap: 1
   allowButtonHold: 1
-  hasPlate: 1
+  hasPlate: 0
   fpsCam: {fileID: 1577513778}
   attackPoint: {fileID: 718471007}
   muzzleFlash: {fileID: 0}
@@ -1393,7 +1393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577513774}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2588186, y: -0, z: -0, w: 0.965926}
+  m_LocalRotation: {x: 0.000000014901161, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.61999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1401,7 +1401,7 @@ Transform:
   - {fileID: 578797088}
   - {fileID: 2087997025}
   m_Father: {fileID: 841700400}
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1577513776
 MonoBehaviour:
   m_ObjectHideFlags: 0
