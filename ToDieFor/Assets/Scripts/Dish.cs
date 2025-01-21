@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Dish : MonoBehaviour
 {
-    public bool picked;
+    public static bool picked;
 
     private void OnMouseUpAsButton()
     {

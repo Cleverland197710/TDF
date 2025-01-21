@@ -5,19 +5,15 @@ using TMPro;
 
 public class ProjectileGunTutorial : MonoBehaviour
 {
-    public Dish script;
-
-    Dish dish;
-    [SerializeField] GameObject plateTest;
-
-
-
+    
     //bullet 
     public GameObject bullet;
 
 
     //bullet force
     public float shootForce, upwardForce;
+
+
 
 
     //Gun stats
@@ -54,7 +50,6 @@ public class ProjectileGunTutorial : MonoBehaviour
         bulletsLeft = magazineSize;
         readyToShoot = true;
         hasPlate = false;
-        dish = GameObject.Find("Plate Test").GetComponent<Dish>();
     }
 
 
@@ -63,9 +58,9 @@ public class ProjectileGunTutorial : MonoBehaviour
     {
         MyInput();
 
-        if (Input.GetKeyDown("q"))
+        if (Dish.picked == true)
         {
-            hasPlate = true;
+            hasPlate = true; 
         }
 
 
@@ -77,7 +72,7 @@ public class ProjectileGunTutorial : MonoBehaviour
     {
         //Check if allowed to hold down button and take corresponding input
         if (allowButtonHold) shooting = Input.GetKey(KeyCode.Mouse1);
-        else shooting = Input.GetKeyDown(KeyCode.Mouse0);
+        else shooting = Input.GetKeyDown(KeyCode.Mouse1);
 
 
         //Reloading 
@@ -101,7 +96,7 @@ public class ProjectileGunTutorial : MonoBehaviour
     private void Shoot()
     {
         readyToShoot = false;
-
+        hasPlate = false;
 
         //Find the exact hit position using a raycast
         Ray ray = fpsCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); //Just a ray through the middle of your current view
