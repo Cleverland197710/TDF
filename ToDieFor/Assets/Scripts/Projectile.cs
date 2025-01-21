@@ -7,6 +7,11 @@ public class ProjectileGunTutorial : MonoBehaviour
 {
     public Dish script;
 
+    Dish dish;
+    [SerializeField] GameObject plateTest;
+
+
+
     //bullet 
     public GameObject bullet;
 
@@ -49,6 +54,7 @@ public class ProjectileGunTutorial : MonoBehaviour
         bulletsLeft = magazineSize;
         readyToShoot = true;
         hasPlate = false;
+        dish = GameObject.Find("Plate Test").GetComponent<Dish>();
     }
 
 

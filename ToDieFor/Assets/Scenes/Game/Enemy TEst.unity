@@ -290,6 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script: {fileID: 130533003}
+  plateTest: {fileID: 130532998}
   bullet: {fileID: 7144981887218201125, guid: 922496d863fc18c49a4ba49fcd88280e, type: 3}
   shootForce: 60
   upwardForce: 5
