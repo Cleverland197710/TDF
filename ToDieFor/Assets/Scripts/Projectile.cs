@@ -89,6 +89,7 @@ public class ProjectileGunTutorial : MonoBehaviour
 
 
             Shoot();
+            hasPlate = false;
         }
     }
 

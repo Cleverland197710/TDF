@@ -6,6 +6,11 @@ public class Dish : MonoBehaviour
 {
     public static bool picked;
 
+    private void Awake()
+    {
+        picked = true;
+    }
+
     private void OnMouseUpAsButton()
     {
         Debug.Log("Plate Picked Up!");
