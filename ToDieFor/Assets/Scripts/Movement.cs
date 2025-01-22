@@ -9,8 +9,12 @@ public class Movement : MonoBehaviour
     public float moveSpeed = 10f;
     public bool colliding = false;
     public bool FailOrDead = false;
-  //public float mouseSensivity = 100f;
-  //float xRotation = 0f;
+    //public float mouseSensivity = 100f;
+    //float xRotation = 0f;
+
+    public bool hasCup;
+    public bool hasPan;
+    public bool hasEgg;
 
     public Transform playerBody;
 

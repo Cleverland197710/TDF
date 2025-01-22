@@ -159,6 +159,9 @@ MonoBehaviour:
   moveSpeed: 20
   colliding: 0
   FailOrDead: 0
+  hasCup: 0
+  hasPan: 0
+  hasEgg: 0
   playerBody: {fileID: 1577513775}
 --- !u!54 &3639162
 Rigidbody:
@@ -557,7 +560,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -568,7 +571,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130532998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -638,6 +641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9540a2e8083041867340dbf5e52b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speak: 0
 --- !u!1 &165631621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 656882779864163744, guid: e121e15d1960be5479c429fae58deb2b, type: 3}
@@ -2143,9 +2147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 820149fc31e0e3749b14341c339bcccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnCup: 0
-  spawnPan: 0
-  spawnEgg: 0
 --- !u!135 &2093197733
 SphereCollider:
   m_ObjectHideFlags: 0

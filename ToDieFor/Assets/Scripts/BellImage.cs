@@ -25,6 +25,7 @@ public class BellImage : MonoBehaviour
         {
             //Vis.gameObject.SetActive(true);
             anim.SetTrigger("FadeBack");
+            Bell.inBell = false;
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3))

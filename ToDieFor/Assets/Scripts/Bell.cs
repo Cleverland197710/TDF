@@ -5,9 +5,9 @@ using UnityEngine;
 public class Bell : MonoBehaviour
 {
     public static bool inBell;
-    public bool spawnCup;
-    public bool spawnPan;
-    public bool spawnEgg;
+    public static bool spawnCup;
+    public static bool spawnPan;
+    public static bool spawnEgg;
 
     private void Awake()
     {
@@ -50,25 +50,26 @@ public class Bell : MonoBehaviour
         }
     }
 
+
     void Cup()
     {
         spawnCup = true;
         inBell = false;
-        Invoke("Off", 0.05f);
+        Invoke("Off", 1.5f);
     }
 
     void Pan()
     {
         spawnPan = true;
         inBell = false;
-        Invoke("Off", 0.05f);
+        Invoke("Off", 1.5f);
     }
 
     void Egg()
     {
         spawnEgg = true;
         inBell = false;
-        Invoke("Off", 0.05f);
+        Invoke("Off", 1.5f);
     }
 
     void Off()
