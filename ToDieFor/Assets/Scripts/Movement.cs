@@ -29,6 +29,11 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Dish.isCup == true && Dish.picked == true)
+        {
+            hasCup = true;
+        }
         
 
         /*if (FailOrDead == true)

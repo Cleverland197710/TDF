@@ -6,9 +6,9 @@ public class Dish : MonoBehaviour
 {
     public static bool picked;
     public static bool isCup;
-    public static bool isPan;
-    public static bool isEgg;
-    public bool speak;
+    public bool isPan;
+    public bool isEgg;
+    private bool speak;
 
 
     private void Awake()
@@ -20,12 +20,12 @@ public class Dish : MonoBehaviour
 
     private void OnMouseUpAsButton()
     {
-        Debug.Log("Plate Picked Up!");
+        //Debug.Log("Plate Picked Up!");
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<SphereCollider>().enabled = false;
-        Invoke("appear", 1.0f);
+        //Invoke("appear", 1.0f);
         picked = true;
-        Clear();
+        Invoke("Clear", 0.5f);
     }
     // Start is called before the first frame update
     void Start()
@@ -38,7 +38,7 @@ public class Dish : MonoBehaviour
     {
         if (Bell.inBell)
         {
-            Debug.Log("Speak");
+            //Debug.Log("inBell");
             speak = true;
         }
 
@@ -46,24 +46,27 @@ public class Dish : MonoBehaviour
         {
             appear();
             isCup = true;
+            Debug.Log("CupSpawned");
             Invoke("appear", 1.0f);
-            Debug.Log("Should BE Cup!");
+            //Debug.Log("Should BE Cup!");
         }
 
-        if (Bell.spawnPan == true)
+        if (speak == true && Input.GetKeyDown(KeyCode.Alpha2))
         {
             appear();
             isPan = true;
-            //Invoke("appear", 1.0f);
-            Debug.Log("Should BE Pan!");
+            Debug.Log("PancakeSpawned");
+            Invoke("appear", 1.0f);
+            //Debug.Log("Should BE Cup!");
         }
 
-        if (Bell.spawnEgg == true)
+        if (speak == true && Input.GetKeyDown(KeyCode.Alpha3))
         {
             appear();
             isEgg = true;
-            //Invoke("appear", 1.0f);
-            Debug.Log("Should BE Egg!");
+            Debug.Log("EggSpawned");
+            Invoke("appear", 1.0f);
+            //Debug.Log("Should BE Cup!");
         }
     }
 
@@ -72,7 +75,8 @@ public class Dish : MonoBehaviour
         picked = false;
         GetComponent<MeshRenderer>().enabled = true;
         GetComponent<SphereCollider>().enabled = true;
-        Debug.Log("appear");    }
+        //Debug.Log("appear");
+    }
 
     private void Clear()
     {

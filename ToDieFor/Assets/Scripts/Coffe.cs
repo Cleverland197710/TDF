@@ -6,12 +6,21 @@ public class Coffe : MonoBehaviour
 {
     [SerializeField] LayerMask coffe;
     [SerializeField] LayerMask coffeLayer;
-    public bool serving = false;
-    public bool fail = false;
+    public bool serving;
+
+    private void Awake()
+    {
+        serving = false;
+    }
 
     private void OnMouseUpAsButton()
     {
-        serving = true;
+       
+        if (Dish.isCup == true)
+        {
+            serving = true;
+        }
+
     }
     // Start is called before the first frame update
     void Start()
@@ -22,16 +31,18 @@ public class Coffe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Invoke("Missed", 10f);
+
         if (serving == true)
         {
             Destroy(gameObject);
         }
 
-        if (fail == true)
-        {
+    }
 
-        }
-
+    void Missed()
+    {
+        Debug.Log("1Missed");
     }
 
 }
