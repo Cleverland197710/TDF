@@ -378,6 +378,7 @@
 "Assets/Scripts/Customer Script.cs"
 "Assets/Scripts/Dish.cs"
 "Assets/Scripts/EnemyAi.cs"
+"Assets/Scripts/FOrC.cs"
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/Plate.cs"
 "Assets/Scripts/PlayerController.cs"

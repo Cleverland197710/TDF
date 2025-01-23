@@ -12,9 +12,10 @@ public class Movement : MonoBehaviour
     //public float mouseSensivity = 100f;
     //float xRotation = 0f;
 
-    public bool hasCup;
+    public static bool hasCup;
     public bool hasPan;
     public bool hasEgg;
+    public bool failed;
 
     public Transform playerBody;
 
@@ -23,26 +24,31 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
        //ursor.lockState = CursorLockMode.Locked; // Lock cursor in place
-
+       failed = false;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        Debug.Log(failed);
         if (Dish.isCup == true && Dish.picked == true)
         {
             hasCup = true;
         }
-        
 
-        /*if (FailOrDead == true)
+        if (FOrC.levelFailed == true)
         {
-            GetComponent<MeshRenderer>().enabled = false;
-            GetComponent<Rigidbody>().isKinematic = true;
-            GetComponent<Movement>().enabled = false;
-            Invoke(nameof(ReloadLevel), 1.3f);
-        }*/
+            //failed = true;
+        }
+        
+        if (failed == true)
+        {
+            failed = false;
+            Invoke("Reset", 0.5f);
+            //failed = false;
+        }
 
         /*
         float mouseX = Input.GetAxis("Mouse X") * mouseSensivity * Time.deltaTime;
@@ -131,6 +137,16 @@ private void LocK()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    private void Reset()
+    {
+        GetComponent<MeshRenderer>().enabled = false;
+        //GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<Movement>().enabled = false;
+        Invoke(nameof(ReloadLevel), 1.3f);
+    }
+
+
 }
 
 
