@@ -25,7 +25,7 @@ public class Dish : MonoBehaviour
         GetComponent<BoxCollider>().enabled = false;
         //Invoke("appear", 1.0f);
         picked = true;
-        Invoke("Clear", 0.5f);
+        Invoke("Clear", 3.5f);
     }
     // Start is called before the first frame update
     void Start()
