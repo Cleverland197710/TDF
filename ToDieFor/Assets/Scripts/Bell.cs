@@ -35,7 +35,8 @@ public class Bell : MonoBehaviour
         {
             if(Input.GetKeyUp(KeyCode.Alpha1))
             {
-                Cup(); 
+                Cup();
+                Debug.Log("InputRecived");
             }
 
             if (Input.GetKeyUp(KeyCode.Alpha2))
@@ -53,9 +54,9 @@ public class Bell : MonoBehaviour
 
     void Cup()
     {
+        Debug.Log("Cup");
         spawnCup = true;
-        inBell = false;
-        Invoke("Off", 1.5f);
+        Invoke("Off", 5f);
     }
 
     void Pan()
@@ -74,6 +75,7 @@ public class Bell : MonoBehaviour
 
     void Off()
     {
+        inBell = false; 
         spawnCup = false;
         spawnPan = false;
         spawnEgg = false;

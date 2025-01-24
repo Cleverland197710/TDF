@@ -8,13 +8,13 @@ public class Dish : MonoBehaviour
     public static bool isCup;
     public bool isPan;
     public bool isEgg;
-    private bool speak;
+    public bool speak;
 
 
     private void Awake()
     {
         GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<SphereCollider>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
     }
 
 
@@ -22,7 +22,7 @@ public class Dish : MonoBehaviour
     {
         //Debug.Log("Plate Picked Up!");
         GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<SphereCollider>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
         //Invoke("appear", 1.0f);
         picked = true;
         Invoke("Clear", 0.5f);
@@ -74,7 +74,7 @@ public class Dish : MonoBehaviour
     {
         picked = false;
         GetComponent<MeshRenderer>().enabled = true;
-        GetComponent<SphereCollider>().enabled = true;
+        GetComponent<BoxCollider>().enabled = true;
         //Debug.Log("appear");
     }
 

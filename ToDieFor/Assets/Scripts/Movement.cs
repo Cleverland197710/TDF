@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
 
-        Debug.Log(failed);
+        
         if (Dish.isCup == true && Dish.picked == true)
         {
             hasCup = true;
