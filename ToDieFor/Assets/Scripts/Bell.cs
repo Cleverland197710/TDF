@@ -11,7 +11,6 @@ public class Bell : MonoBehaviour
 
     private void Awake()
     {
-        inBell = false;
         spawnCup = false;
         spawnPan = false;
         spawnEgg = false;
@@ -19,6 +18,7 @@ public class Bell : MonoBehaviour
 
     private void OnMouseUp()
     {
+        Debug.Log("Ding!");
         inBell=true;
     }
 

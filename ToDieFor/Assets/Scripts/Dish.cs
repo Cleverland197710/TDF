@@ -38,7 +38,7 @@ public class Dish : MonoBehaviour
     {
         if (Bell.inBell)
         {
-            //Debug.Log("inBell");
+            //Debug.Log("speak");
             speak = true;
         }
 
