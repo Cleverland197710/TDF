@@ -25,7 +25,7 @@ public class Dish : MonoBehaviour
         GetComponent<BoxCollider>().enabled = false;
         //Invoke("appear", 1.0f);
         picked = true;
-        Invoke("Clear", 3.5f);
+        Invoke("Clear", .5f);
     }
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,7 @@ public class Dish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Bell.inBell)
+        if (Bell.inBell == true)
         {
             //Debug.Log("speak");
             speak = true;
@@ -83,5 +83,6 @@ public class Dish : MonoBehaviour
         isCup = false;
         isPan = false;
         isEgg = false;
+        speak = false;
     }
 }

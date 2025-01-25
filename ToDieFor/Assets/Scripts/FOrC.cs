@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FOrC : MonoBehaviour
 {
-    public int maxNumberOfMissedCustomers = 2;
+    public int maxNumberOfMissedCustomers = 1;
     public int numberOfMissedCustomers = 0;
     public static bool levelFailed;
 
@@ -33,7 +33,13 @@ public class FOrC : MonoBehaviour
         if (levelFailed == true)
         {
             ReloadLevel();
+            LoadFired();
         }
+    }
+
+    void LoadFired()
+    {
+
     }
 
     void ReloadLevel()
