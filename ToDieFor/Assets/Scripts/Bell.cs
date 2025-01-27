@@ -33,6 +33,8 @@ public class Bell : MonoBehaviour
     {
         if (inBell == true)
         {
+            Debug.Log("inBell");
+
             if(Input.GetKeyUp(KeyCode.Alpha1))
             {
                 Cup();

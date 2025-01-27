@@ -15,6 +15,7 @@ public class Dish : MonoBehaviour
     {
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
+        speak = true;
     }
 
 
@@ -40,6 +41,7 @@ public class Dish : MonoBehaviour
         {
             //Debug.Log("speak");
             speak = true;
+            Debug.Log("Speaking");
         }
 
         if (speak == true && Input.GetKeyDown(KeyCode.Alpha1))
@@ -83,6 +85,6 @@ public class Dish : MonoBehaviour
         isCup = false;
         isPan = false;
         isEgg = false;
-        speak = false;
+        //speak = false;
     }
 }
