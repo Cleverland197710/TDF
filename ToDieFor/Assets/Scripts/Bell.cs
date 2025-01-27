@@ -18,7 +18,6 @@ public class Bell : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Debug.Log("Ding!");
         inBell=true;
     }
 
@@ -33,9 +32,9 @@ public class Bell : MonoBehaviour
     {
         if (inBell == true)
         {
-            Debug.Log("inBell");
+            Debug.Log("Ding!");
 
-            if(Input.GetKeyUp(KeyCode.Alpha1))
+            if (Input.GetKeyUp(KeyCode.Alpha1))
             {
                 Cup();
                 Debug.Log("InputRecived");
