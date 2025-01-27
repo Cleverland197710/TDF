@@ -21,6 +21,7 @@ public class ProjectileGunTutorial : MonoBehaviour
     public int magazineSize, bulletsPerTap;
     public bool allowButtonHold;
     public bool hasPlate = false;
+    public static bool resetM1;
 
 
     int bulletsLeft, bulletsShot;
@@ -90,6 +91,8 @@ public class ProjectileGunTutorial : MonoBehaviour
 
             Shoot();
             hasPlate = false;
+            Dish.picked = false;
+            resetM1 = true;
         }
     }
 
@@ -98,6 +101,8 @@ public class ProjectileGunTutorial : MonoBehaviour
     {
         readyToShoot = false;
         hasPlate = false;
+        Dish.picked = false;
+        resetM1 = true;
 
         //Find the exact hit position using a raycast
         Ray ray = fpsCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); //Just a ray through the middle of your current view
