@@ -43,6 +43,8 @@ public class Coffe : MonoBehaviour
 
         if (serving == true)
         {
+            Movement.hasCup = false;
+            Movement.hasPan = false;
             Destroy(gameObject);
         }
 

@@ -12,8 +12,9 @@ public class Movement : MonoBehaviour
     //public float mouseSensivity = 100f;
     //float xRotation = 0f;
 
+    public static bool hasPlate;
     public static bool hasCup;
-    public bool hasPan;
+    public static bool hasPan;
     public bool hasEgg;
     public bool failed;
 
@@ -31,11 +32,21 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(hasCup);
         
         if (Dish.isCup == true && Dish.picked == true)
         {
             hasCup = true;
+        }
+
+        if (Dish.picked == true)
+        {
+            hasPlate = true;
+        }
+
+        if (hasPlate == false && Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            hasCup = false;
         }
 
         if (FOrC.levelFailed == true)

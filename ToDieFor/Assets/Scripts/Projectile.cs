@@ -22,6 +22,7 @@ public class ProjectileGunTutorial : MonoBehaviour
     public bool allowButtonHold;
     public bool hasPlate = false;
     public static bool resetM1;
+    public static bool blasting;
 
 
     int bulletsLeft, bulletsShot;
@@ -99,6 +100,7 @@ public class ProjectileGunTutorial : MonoBehaviour
 
     private void Shoot()
     {
+        blasting = true;
         readyToShoot = false;
         hasPlate = false;
         Dish.picked = false;
@@ -167,6 +169,7 @@ public class ProjectileGunTutorial : MonoBehaviour
         //Allow shooting and invoking again
         readyToShoot = true;
         allowInvoke = true;
+        blasting = false;
     }
 
 
