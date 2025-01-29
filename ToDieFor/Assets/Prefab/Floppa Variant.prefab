@@ -114,6 +114,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4153965659762919839, guid: cb6505d0339fd794eaa5e96e97b08da4, type: 3}
+      propertyPath: health
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 6109830747539855333, guid: cb6505d0339fd794eaa5e96e97b08da4, type: 3}
       propertyPath: m_Name
       value: Floppa Variant

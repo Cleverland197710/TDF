@@ -89,8 +89,7 @@ public class ProjectileGunTutorial : MonoBehaviour
             //Set bullets shot to 0
             bulletsShot = 0;
 
-
-            Shoot();
+            Invoke("Shoot", .9f);
             hasPlate = false;
             Dish.picked = false;
             resetM1 = true;
@@ -100,7 +99,6 @@ public class ProjectileGunTutorial : MonoBehaviour
 
     private void Shoot()
     {
-        blasting = true;
         readyToShoot = false;
         hasPlate = false;
         Dish.picked = false;

@@ -36,11 +36,12 @@ public class Dish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(picked);
+
         if (Bell.inBell == true)
         {
             //Debug.Log("speak");
             speak = true;
-            Debug.Log("Speaking");
         }
 
         if (speak == true && Input.GetKeyDown(KeyCode.Alpha1))
@@ -81,6 +82,7 @@ public class Dish : MonoBehaviour
 
     private void Clear()
     {
+        picked = false;
         isCup = false;
         isPan = false;
         isEgg = false;

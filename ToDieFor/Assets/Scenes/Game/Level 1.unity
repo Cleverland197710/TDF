@@ -2459,7 +2459,7 @@ PrefabInstance:
     - target: {fileID: 2675919039571679317, guid: 12a431ff5561d9145ac9bc554a3f7988, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 2147488601275151728, guid: 6491de42621c58b4195ce9deb04219ea, type: 3}
+      objectReference: {fileID: 7506633774352946298, guid: 991882a58d3af924fa08b668f323b593, type: 3}
     - target: {fileID: 3500729263443931835, guid: 12a431ff5561d9145ac9bc554a3f7988, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25

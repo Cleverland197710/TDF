@@ -24,6 +24,7 @@ public class Coffe : MonoBehaviour
         if (Movement.hasCup == true)
         {
             serving = true;
+            Movement.hasCup = false;
         }
 
     }

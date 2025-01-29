@@ -44,7 +44,7 @@ public class Movement : MonoBehaviour
             hasPlate = true;
         }
 
-        if (hasPlate == false && Input.GetKeyDown(KeyCode.Mouse1))
+        if (hasPlate == true && Input.GetKeyDown(KeyCode.Mouse1))
         {
             hasCup = false;
         }
