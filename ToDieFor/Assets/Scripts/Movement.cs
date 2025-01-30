@@ -18,6 +18,7 @@ public class Movement : MonoBehaviour
     public bool hasEgg;
     public bool failed;
     public float health;
+    public float jumpForce;
 
     public Transform playerBody;
 
@@ -30,10 +31,26 @@ public class Movement : MonoBehaviour
        
     }
 
+    private void FixedUpdate()
+    {
+        if (VaultScript.vault == true)
+        {
+            //rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
+            VaultScript.vault = false;
+        }
+    }
+
+
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(hasCup);
+        /*if (VaultScript.vault == true)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y + 5f, transform.position.z);
+            VaultScript.vault = false;
+        }*/
         
         if (Dish.isCup == true && Dish.picked == true)
         {
@@ -129,22 +146,6 @@ private void LocK()
         Debug.Log("run");
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Vault"))
-        {
-            colliding = true;
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (CompareTag("Vault"))
-        {
-            colliding = true;
-        }
-    }
-
     void ReloadLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -168,6 +169,7 @@ private void LocK()
     void Death()
     {
         Debug.Log("Ur Dead :p");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 

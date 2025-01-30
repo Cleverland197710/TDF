@@ -53,6 +53,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 725748389856807714, guid: 4bda94453d2ca7444a0fff05b2d425f5, type: 3}
     - target: {fileID: 4701944191425761267, guid: 922496d863fc18c49a4ba49fcd88280e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701944191425761267, guid: 922496d863fc18c49a4ba49fcd88280e, type: 3}
       propertyPath: useGravity
       value: 1
       objectReference: {fileID: 0}
@@ -75,5 +79,46 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7144981887218201125, guid: 922496d863fc18c49a4ba49fcd88280e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7571008399979371341}
   m_SourcePrefab: {fileID: 100100000, guid: 922496d863fc18c49a4ba49fcd88280e, type: 3}
+--- !u!54 &500519035835178308 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 2902496120602619350, guid: 922496d863fc18c49a4ba49fcd88280e, type: 3}
+  m_PrefabInstance: {fileID: 3365754345691885714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5592798476062458551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7144981887218201125, guid: 922496d863fc18c49a4ba49fcd88280e, type: 3}
+  m_PrefabInstance: {fileID: 3365754345691885714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-7571008399979371341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5592798476062458551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3654703eae001e4b91fe21b9f515df3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 500519035835178308}
+  explosion: {fileID: 725748389856807714, guid: 4bda94453d2ca7444a0fff05b2d425f5, type: 3}
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 128
+  Player:
+    serializedVersion: 2
+    m_Bits: 256
+  bounciness: 0.159
+  useGravity: 1
+  explosionDamage: 100
+  explosionRange: 3
+  explosionForce: 10
+  maxCollisions: 2
+  maxLifetime: 3
+  explodeOnTouch: 1

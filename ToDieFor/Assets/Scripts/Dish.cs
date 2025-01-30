@@ -36,7 +36,6 @@ public class Dish : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(picked);
 
         if (Bell.inBell == true)
         {
