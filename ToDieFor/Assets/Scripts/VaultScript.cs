@@ -47,7 +47,7 @@ public class VaultScript : MonoBehaviour
     void Climbing()
     {
         climbing = true;
-        Invoke("Falseify", 3f);
+        Invoke("Falseify", 1f);
     }
 
     void Colliding()

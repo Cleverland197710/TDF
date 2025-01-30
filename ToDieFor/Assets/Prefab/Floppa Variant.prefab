@@ -119,6 +119,10 @@ PrefabInstance:
       value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4153965659762919839, guid: cb6505d0339fd794eaa5e96e97b08da4, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 8526398978050841279, guid: e0d5ee38302692c429274916004045d1, type: 3}
+    - target: {fileID: 4153965659762919839, guid: cb6505d0339fd794eaa5e96e97b08da4, type: 3}
       propertyPath: walkPointRange
       value: 2.5
       objectReference: {fileID: 0}

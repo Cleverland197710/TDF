@@ -36,7 +36,7 @@ public class Movement : MonoBehaviour
         if (VaultScript.vault == true)
         {
             //rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
-            transform.position = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y + .15f, transform.position.z);
             VaultScript.vault = false;
         }
     }
