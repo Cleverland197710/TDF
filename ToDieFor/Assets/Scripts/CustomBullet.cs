@@ -9,6 +9,7 @@ public class CustomBullet : MonoBehaviour
     public Rigidbody rb;
     public GameObject explosion;
     public LayerMask whatIsEnemies;
+    public LayerMask Player;
 
     //Stats
     [Range(0f, 1f)]

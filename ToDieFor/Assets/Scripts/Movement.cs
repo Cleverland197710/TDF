@@ -17,6 +17,7 @@ public class Movement : MonoBehaviour
     public static bool hasPan;
     public bool hasEgg;
     public bool failed;
+    public float health;
 
     public Transform playerBody;
 
@@ -155,6 +156,18 @@ private void LocK()
         //GetComponent<Rigidbody>().isKinematic = true;
         GetComponent<Movement>().enabled = false;
         Invoke(nameof(ReloadLevel), 1.3f);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0) Invoke(nameof(Death), 0.5f);
+    }
+
+    void Death()
+    {
+        Debug.Log("Ur Dead :p");
     }
 
 
