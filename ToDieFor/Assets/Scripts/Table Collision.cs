@@ -7,7 +7,7 @@ public class TableCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        BoxCollider col = GetComponent<BoxCollider>();
+        MeshCollider col = GetComponent<MeshCollider>();
     }
 
     // Update is called once per frame
@@ -15,12 +15,12 @@ public class TableCollision : MonoBehaviour
     {
         if (VaultScript.vault == true)
         {
-            GetComponent<BoxCollider>().enabled = false;
+            GetComponent<MeshCollider>().enabled = false;
         }
 
         if (VaultScript.vault == false)
         {
-            GetComponent<BoxCollider>().enabled = true;
+            GetComponent<MeshCollider>().enabled = true;
         }
     }
 }

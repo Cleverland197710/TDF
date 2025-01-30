@@ -32,7 +32,7 @@ public class VaultScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
             Invoke("Climbing", 0f);
         }
@@ -42,12 +42,16 @@ public class VaultScript : MonoBehaviour
             vault = true;
             Debug.Log("Vaulting");
         }
+
+        if (Input .GetKeyUp(KeyCode.Space))
+        {
+            Invoke("Falseify", 1f);
+        }
     }
 
     void Climbing()
     {
         climbing = true;
-        Invoke("Falseify", 1f);
     }
 
     void Colliding()

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/MenuV2.unity
     guid: 2f339d67a0acb834a904afcd835de938
   - enabled: 1
-    path: Assets/Scenes/Game/Level 1.unity
+    path: Assets/Scenes/Game/Day 1.unity
     guid: 361ed815b6a1abe4aae3c293de33c706
   - enabled: 1
     path: Assets/Scenes/Menu/Fired.unity

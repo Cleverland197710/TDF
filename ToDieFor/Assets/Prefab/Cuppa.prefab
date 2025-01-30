@@ -266,7 +266,7 @@ MonoBehaviour:
   timeBetweenAttacks: 5
   projectile: {fileID: 5592798476062458551, guid: cc5a613ce843b8f44bcb522d3b275562, type: 3}
   sightRange: 30
-  attackRange: 10
+  attackRange: 5
   playerInSightRange: 0
   playerInAttackRange: 0
 --- !u!331 &8977692837067422893
