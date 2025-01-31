@@ -20,7 +20,7 @@ public class MeeleScriptlol : MonoBehaviour
     public float timeBetweenShooting, spread, reloadTime, timeBetweenShots;
     public int magazineSize, bulletsPerTap;
     public bool allowButtonHold;
-    public bool hasPlate = false;
+    public bool hasPlate;
 
 
     int bulletsLeft, bulletsShot;
@@ -58,13 +58,13 @@ public class MeeleScriptlol : MonoBehaviour
     {
         MyInput();
 
-        if (Dish.picked == false)
+        if (Movement.hasPlate == false)
         {
             //ProjectileGunTutorial.resetM1 = true;
             hasPlate = false;
         }
 
-        if (Dish.picked == true)
+        if (Movement.hasPlate == true)
         {
             hasPlate = true;
         }
@@ -93,10 +93,15 @@ public class MeeleScriptlol : MonoBehaviour
             //Set bullets shot to 0
             bulletsShot = 0;
 
-
-            Shoot();
+            Invoke("Shoot", .9f);
+            //Shoot();
             hasPlate = false;
         }
+    }
+
+    void Punch()
+    {
+
     }
 
 

@@ -57,6 +57,16 @@ public class Movement : MonoBehaviour
             hasCup = true;
         }
 
+        if (Dish.isPan == true && Dish.picked == true)
+        {
+            hasPan = true;
+        }
+
+        if (Dish.isEgg == true && Dish.picked == true)
+        {
+            hasEgg = true;
+        }
+
         if (Dish.picked == true)
         {
             hasPlate = true;
@@ -65,6 +75,8 @@ public class Movement : MonoBehaviour
         if (hasPlate == true && Input.GetKeyDown(KeyCode.Mouse1))
         {
             hasCup = false;
+            hasPan = false;
+            hasEgg = false;
         }
 
         if (FOrC.levelFailed == true)

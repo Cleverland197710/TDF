@@ -1,0 +1,261 @@
+[Info]
+name = "JJBA - THE WORLD"
+displayname = "JoJo - The World"
+author = "Kyo The Epic"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -216
+boundright = 216
+boundhigh = 0
+boundlow = 0
+verticalfollow = 0
+floortension = 0
+tension = 60
+
+
+[PlayerInfo]
+;--- Player 1 ---
+ 
+p1startx = -70          
+p1starty = 0            
+p1startz = 0           
+p1facing = 1            
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000
+rightbound =  1000 
+topbound  =  0     
+botbound  =  0     
+
+;---------------------------------
+[Scaling]
+topz     = 0       
+botz     = 50      
+topscale = 1       
+botscale = 1.2  
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15    
+screenright = 15   
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+;---------------------------------------------------------
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+;==[ BACKGROUND ]==
+[BGdef]
+spr = JJBA - THE WORLD.sff
+debugbg = 0
+
+[Music]
+bgmusic = sound/JoJo Bizarre Adventure Stardust Crusader OST Dio s -  World.mp3
+
+;----------
+
+;=[ BG ]=
+
+[BG Stage]
+type  = normal
+spriteno = 0,0
+layerno = 0
+start = -240, -20
+delta = 0.0975, 0.075
+trans = none
+mask = 0
+tile = 0, 0
+tilespacing = 0,0
+
+
+
+
+
+[BG Stage]
+type  = normal
+spriteno = 222,0
+layerno = 0
+start = -240, -20
+delta = 0.0975, 0.075
+trans = add
+mask = 0
+tile = 0, 0
+tilespacing = 0,0
+
+
+
+
+
+[BG Stage]
+type = normal
+spriteno = 3,2
+start = -280,180
+mask = 1
+delta = 0.15,0.125
+
+[BG Stage]
+type = normal
+spriteno = 3,12
+start = 280,180
+mask = 1
+delta = 0.15,0.125
+
+
+
+
+[BG Stage]
+type = normal
+spriteno = 3,3
+start = -300,182
+mask = 1
+delta = 0.18,0.16
+
+
+[BG Stage]
+type  = normal
+spriteno = 2,0
+layerno = 0
+start = -240, -20
+delta = 0.0975, 0.075
+trans = none
+mask = 0
+tile = 0, 0
+tilespacing = 0,0
+
+
+[BG Stage]
+type  = normal
+spriteno = 444,0
+layerno = 0
+start = -240, -20
+delta = 0.15,0.125
+trans = none
+mask = 1
+tile = 0, 0
+tilespacing = 0,0
+
+
+;=[ FLOOR ]=
+
+[BG Stage]
+type  = normal
+spriteno = 1,1
+layerno = 0
+start = -864, 190
+delta = 0.83, 0.25
+trans = none
+mask = 1
+tile = 64, 0
+tilespacing = 0,0
+
+[BG Stage]
+type  = normal
+spriteno = 1,2
+layerno = 0
+start = -800, 190
+delta = 0.55, 0.25
+trans = none
+mask = 1
+tile = 64, 0
+tilespacing = 39,0
+
+
+
+
+[BG Stage]
+type  = normal
+spriteno = 1,4
+layerno = 0
+start = -800,190
+delta = 0.61, 0.25
+trans = none
+mask  = 1
+tile  = 64, 0
+tilespacing = 0,0
+
+[BG Stage]
+type = parallax
+spriteno = 1,0
+start = 0,200
+delta = 0.83, 0.25
+mask = 0
+xscale = 1, 1.58
+
+[bg 2]
+type = normal
+spriteno = 777,0
+start = -150,200
+mask = 1
+layerno = 1
+trans = sub
+
+
+
+[BG Stage]
+type  = Normal
+;actionno = 1
+spriteno = 22344,0
+layerno = 0
+start = -240, -20
+delta = 0.55, 0.25
+trans = add
+mask = 0
+tile = 0, 0
+tilespacing = 0,0
+
+
+
+
+[Begin Action 111]
+7,0, 0,0, 3, ,A
+7,1, 0,0, 3, ,A
+7,2, 0,0, 3, ,A
+7,3, 0,0, 3, ,A
+7,4, 0,0, 3, ,A
+7,5, 0,0, 3, ,A
+7,6, 0,0, 3, ,A
+7,7, 0,0, 3, ,A
+7,8, 0,0, 3, ,A
+7,9, 0,0, 3, ,A
+
+;---------------------------------------
+[Begin Action 4]
+2,0,0,0,4, ,
+2,1,0,0,4, ,
+2,2,0,0,4, ,
+2,3,0,0,4, ,
+2,4,0,0,4, ,
+2,5,0,0,4, ,
+2,6,0,0,4, ,
+2,7,0,0,4, ,
+2,8,0,0,4, ,
+2,9,0,0,4, ,
+2,10,0,0,4, ,
+2,11,0,0,4, ,
+2,12,0,0,4, ,
+2,13,0,0,4, ,
+2,14,0,0,4, ,
+2,15,0,0,4, ,
+2,16,0,0,4, ,
+2,17,0,0,4, ,
+2,18,0,0,4, ,
+2,19,0,0,4, ,
+;---------------------------------------
+
+

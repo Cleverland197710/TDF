@@ -6,8 +6,8 @@ public class Dish : MonoBehaviour
 {
     public static bool picked;
     public static bool isCup;
-    public bool isPan;
-    public bool isEgg;
+    public static bool isPan;
+    public static bool isEgg;
     public bool speak;
 
 

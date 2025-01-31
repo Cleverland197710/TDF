@@ -6,20 +6,20 @@ public class SoundTest : MonoBehaviour
 {
     public AudioClip SoundToPlay;
     public float Volume;
-    AudioSource audio;
+    AudioSource sound;
     public bool alreadyPlayed = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<AudioSource>();    
+        sound = GetComponent<AudioSource>();    
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (!alreadyPlayed)
         {
-            audio.PlayOneShot(SoundToPlay, Volume);
+            sound.PlayOneShot(SoundToPlay, Volume);
             alreadyPlayed = true;
         }
     }
@@ -27,6 +27,10 @@ public class SoundTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!alreadyPlayed && Bell.inBell == true)
+        {
+            sound.PlayOneShot(SoundToPlay, Volume);
+            //alreadyPlayed = true;
+        }
     }
 }

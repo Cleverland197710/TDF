@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class PlayerKiller : MonoBehaviour
 {
+
+    Animator anim;
+
     //Assignables
     public Rigidbody rb;
     public GameObject explosion;
     public LayerMask whatIsEnemies;
     public LayerMask Player;
+    public static bool EnemyAttack;
 
     //Stats
     [Range(0f, 1f)]
@@ -32,20 +37,30 @@ public class PlayerKiller : MonoBehaviour
     private void Start()
     {
         Setup();
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
     {
         //When to explode:
-        if (collisions > maxCollisions) Explode();
+        if (collisions > maxCollisions)
+        {
+            Invoke("Explode", 30000000000000f);
+            EnemyAttack = true;
+        }
 
         //Count down lifetime
         maxLifetime -= Time.deltaTime;
-        if (maxLifetime <= 0) Explode();
+        if (maxLifetime <= 0)
+        {
+            Invoke("Explode", 30000000000000f);
+            EnemyAttack = true;
+        }
     }
 
     private void Explode()
     {
+        EnemyAttack = false;
         //Instantiate explosion
         if (explosion != null) Instantiate(explosion, transform.position, Quaternion.identity);
 

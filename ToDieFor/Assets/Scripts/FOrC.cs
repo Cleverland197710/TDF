@@ -30,6 +30,11 @@ public class FOrC : MonoBehaviour
             numberOfMissedCustomers++;
         }
 
+        if (Pancake.panBah == true)
+        {
+            numberOfMissedCustomers++;
+        }
+
         if (levelFailed == true)
         {
             ReloadLevel();

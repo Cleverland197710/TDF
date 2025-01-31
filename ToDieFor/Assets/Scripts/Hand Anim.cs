@@ -45,5 +45,12 @@ public class HandAnim : MonoBehaviour
             anim.SetBool("Cup", false);
             anim.SetBool("No Plate", true);
         }
+
+        if (Input.GetKeyDown(KeyCode.Mouse2))
+        {
+            anim.SetTrigger("Punch");
+            anim.SetBool("Cup", false);
+            anim.SetBool("No Plate", true);
+        }
     }
 }

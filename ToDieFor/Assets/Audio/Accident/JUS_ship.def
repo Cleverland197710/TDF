@@ -1,0 +1,201 @@
+
+[Info]
+name = "One Piece - Navio"
+Author = OldGamer
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -20
+boundright = 20
+boundhigh = -120
+boundlow = -5
+verticalfollow = .5
+floortension= 50
+tension =50
+zoomin=1
+zoomout=.7
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+p1startx = -70         
+p1starty = 0            
+p1facing = 1            
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2facing = -1
+
+;--- Player 3 ---
+p3startx = -130
+p3starty = 0
+p3facing = 1
+
+;--- Player 4 ---
+p4startx = 130
+p4starty = 0
+p4facing = -1
+
+;--- Common ---
+leftbound  = -4000 ;Left bound (x-movement)
+rightbound =  4000 ;Right bound
+topbound       = 0
+botbound       = 0
+
+[Scaling]
+topz           = 0
+botz           = 50
+topscale       = 1
+botscale       = 1.2
+
+[Bound]
+screenleft     = 20
+screenright    = 20
+
+[StageInfo]
+zoffset        = 300
+zoffsetlink = 9
+autoturn       = 1
+localcoord =  320,240
+
+[Shadow]
+color= 20,20,20
+yscale = .1
+intensity = 60
+
+[Music]
+bgmusic        = sound/JUS_ship.mp3
+bgvolume       = 100
+
+[BGdef]
+spr            = JUS_ship.sff
+debugbg        = 0
+
+[BG 0]
+type = normal
+spriteno = 0,0
+start = 0,-90
+delta = .1,1
+velocity = -1,0
+tile =1,0
+mask = 1
+ID = 7
+
+[BG 1]
+type = normal
+spriteno = 0,1
+start = 0,-90
+delta = .4,1
+mask = 1
+ID = 8
+
+[BG 2]
+type = normal
+spriteno = 0,2
+start = 0,-90
+delta = 1,1
+mask = 1
+ID = 9
+
+[BG 3]
+type = anim
+actionno = 1
+start = 0,-90
+delta = 1,1
+mask = 1
+ID = 9
+
+[BG 4]
+type = anim
+actionno = 2
+start = 0,-90
+delta = 1,1
+mask = 1
+ID = 9
+
+[BG 5]
+type = anim
+actionno = 3
+start = 0,-90
+delta = 1,1
+mask = 1
+ID = 9
+
+[BG 6]
+type = anim
+actionno = 4
+start = 0,-90
+delta = 1,1
+mask = 1
+ID = 9
+
+;--------------------------------------------
+;animation code goes here
+;--------------------------------------------
+
+[Begin Action 1]
+1,0, 0,0, 20
+1,1, 0,0, 20
+
+[Begin Action 2]
+2,0, 0,0, 6
+2,1, 0,0, 6
+2,2, 0,0, 6
+2,3, 0,0, 6
+2,4, 0,0, 6
+2,5, 0,0, 6
+2,4, 0,0, 6
+2,5, 0,0, 6
+2,4, 0,0, 6
+2,5, 0,0, 6
+2,4, 0,0, 6
+2,5, 0,0, 6
+2,4, 0,0, 6
+2,5, 0,0, 6
+2,4, 0,0, 6
+2,5, 0,0, 6
+
+[Begin Action 3]
+3,0, 0,0, 6
+3,1, 0,0, 6
+3,2, 0,0, 6
+3,3, 0,0, 6
+3,4, 0,0, 6
+3,5, 0,0, 6
+
+[Begin Action 4]
+4,0, 0,0, 90
+4,1, 0,0, 7
+4,2, 0,0, 7
+4,3, 0,0, 7
+
+;---------------------------------
+;background controllers
+;---------------------------------
+
+[BGCtrlDef]
+CtrlID = 7
+
+[BGCtrl Shake Amount Y]
+type = SinY
+time = 0
+value = 8,180,0
+
+[BGCtrlDef]
+CtrlID = 8
+
+[BGCtrl Shake Amount Y]
+type = SinY
+time = 0
+value = 6,180,0
+
+[BGCtrlDef]
+CtrlID = 9
+
+[BGCtrl Shake Amount Y]
+type = SinY
+time = 0
+value = 2,170,0

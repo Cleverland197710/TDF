@@ -1,0 +1,148 @@
+
+[Info]
+name 		= "Mitsuki Stage"
+displayname 	= "Naruto - Cenario do Mitsuki"
+versiondate 	= 
+mugenversion 	= 1.0
+author 		= "Sektor & RBM Kyuubi"
+
+[Camera]
+startx 		= 0
+starty 		= 0
+boundleft 	= -480
+boundright 	= 480
+boundhigh 	= -1000
+boundlow 	= 0
+tension 	= 300
+verticalfollow 	= .75
+floortension 	= 300
+overdrawhigh 	= 120
+overdrawlow 	= 120
+cuthigh 	= 0
+cutlow 		= 0
+zoomout = 0.7
+zoomin = .8
+
+[PlayerInfo]
+p1startx 	= -280
+p1starty 	= 0
+p1facing 	= 1
+p2startx 	= 280
+p2starty 	= 0
+p2facing 	= -1
+p3startx 	= -400
+p3starty 	= 0
+p3facing 	= 1
+p4startx 	= 400
+p4starty 	= 0
+p4facing 	= -1
+leftbound 	= -4000
+rightbound 	= 4000
+
+[Bound]
+screenleft 	= 60
+screenright 	= 60
+
+[StageInfo]
+zoffset 	= 670
+autoturn 	= 1
+resetBG 	= 0
+localcoord 	= 1288, 810
+xscale 		= 1
+yscale 		= 1
+
+[Scaling]
+topz     	= 0
+botz     	= 50
+topscale 	= 1
+botscale 	= 1.2
+
+[Shadow]
+color 		= 0,0,0
+yscale 		= .2
+
+[Music]
+bgmusic 	= sound/Cenario_do_Mitsuki.mp3
+bgvolume 	= 255
+
+[BGdef]
+spr 		= Cenario_do_Mitsuki.sff
+debugbg 	= 0
+
+[BG SKY]
+type = Normal
+spriteno = 0,0
+start = 0,0
+delta = 0,0
+Layerno = 0
+mask = 1
+Tile = 0,0
+
+[BG BRILLO DE LUNA]
+type = Normal
+spriteno = 5,0
+start = -350,-450
+delta = 1,1
+Layerno = 0
+mask = 1
+trans = add
+
+[BG LUNA]
+type =normal
+spriteno =1,0
+start = -350,-450
+delta = 1,1
+Layerno = 0
+mask=1
+
+[BG PUENTE]
+type =normal
+spriteno =2,0
+start = 0,150
+delta = 1,1
+Layerno = 0
+mask=1
+
+[BG polvo 1]
+type = Normal
+spriteno = 4,0
+start = 0,540
+delta = 2,2
+Layerno = 0
+mask = 1
+tile = 1,0
+velocity = 1,0
+trans = addalpha
+alpha = 185,256
+
+[BG Plataforma]
+type = Normal
+spriteno = 3,0
+start = 0,550
+delta = .9,.9
+Layerno = 0
+mask = 1
+zoomdelta = .9
+
+[BG Polvo largo]
+type = Normal
+spriteno = 6,0
+start = 0,1000
+delta = 2,2
+Layerno = 1
+mask = 1
+tile = 1,0
+velocity = 5,0
+trans = add
+
+[BG polvo 1]
+type = Normal
+spriteno = 4,0
+start = 0,900
+delta = 2,2
+Layerno = 1
+mask = 1
+tile = 1,0
+velocity = 1,0
+trans = addalpha
+alpha = 205,256

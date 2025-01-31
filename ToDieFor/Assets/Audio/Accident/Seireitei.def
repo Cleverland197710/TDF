@@ -1,0 +1,108 @@
+;==========================================================
+;Web:       http://danmt-lair.blogspot.com
+;Game:      Bleach DS 4th: Flame Bringer 
+;Plataform: Nintendo - Dual Screen (aka NDS)     
+;==========================================================
+
+[Info]
+name   = "Bleach - Seireitei"
+author = "Dan Mt."
+
+;------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -96 
+boundright = 96 
+boundhigh = -350
+boundlow = 0
+verticalfollow = .5
+floortension = 100
+tension = 100
+zoomout = .75
+
+;------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+            
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound = 1000 
+topbound  =  0     
+botbound  =  0
+     
+;------------------------------------------------------
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;------------------------------------------------------
+[Bound]
+screenleft = 25    
+screenright = 25   
+
+;------------------------------------------------------
+[StageInfo]
+Hires = 0
+zoffset = 200
+autoturn = 1
+resetBG = 0
+
+;------------------------------------------------------
+[Shadow]
+intensity = 0
+color = 0,0,0
+yscale = 0
+
+;------------------------------------------------------
+[Reflection]
+intensity = 40
+
+;------------------------------------------------------
+[Music]
+bgmusic =  sound/Seireitei.mp3
+bgvolume = 255
+
+;------------------------------------------------------
+[BGdef]
+spr = Seireitei.sff
+debugbg = 0
+
+;------------------------------------------------------
+[BG 0]
+type = normal
+spriteno = 0, 0
+start = -256,76
+delta = 0.784,0.854
+mask = 1
+
+[BG 1]
+type = normal
+spriteno = 0, 1
+start = -256,76
+delta = 0.784,0.854
+tile = 1,0
+tilespacing = 0,0
+velocity = -0.352,0
+mask = 1
+
+[BG 2]
+type = normal
+spriteno = 0, 2
+start = -256,76
+delta = 1,1
+mask = 1
+
+;==========================================================
+;Extra Credits
+;Sprites Ripped by Ichiron47
+;==========================================================

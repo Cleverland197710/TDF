@@ -1,0 +1,130 @@
+[Info]
+name = "Karakura Town"
+displayname = "Bleach - Karakura (Noite)"
+author = "President Devon"
+versiondate = 09,07,2017
+mugenversion = 1.1
+
+[Camera]
+startx=0
+starty=0
+boundleft=-470
+boundright=470
+boundhigh=-120
+boundlow=20
+verticalfollow=.75
+floortension=100
+tension=75
+overdrawhigh=20
+overdrawlow=20
+tensionhigh=85
+tensionlow=25
+startzoom=1
+zoomin=1
+zoomout=.85
+
+[PlayerInfo]
+p1startx = -100
+p1starty = 0
+p1facing = 1
+
+p2startx = 100
+p2starty = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 240
+autoturn = 1
+resetBG = 0
+localcoord = 320,240
+
+[Shadow]
+intensity = 64
+color = 128,128,128
+yscale = .1
+fade.range = 0,0
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/chokkaku.mp3
+bgmvolume = 255
+
+[BGdef]
+spr=karakura_town.sff
+debugbg=0
+
+;--Background
+[BG Sky]
+type=normal
+spriteno=0,0
+tile=1,1
+
+[BG Stars]
+type=normal
+spriteno=1,0
+start=0,-100
+tile=1,0
+delta=.32,.52
+
+[BG Moon]
+type=normal
+spriteno=1,1
+start=0,-100
+delta=.35,.55
+trans=addalpha
+
+[BG Clouds]
+type=normal
+spriteno=1,2
+start=0,-50
+delta=.38,.57
+velocity=-0.009,0
+trans=addalpha
+
+[BG City]
+type=normal
+spriteno=4,0
+start=0,20
+tile=1,0
+delta=.4,.6
+trans=addalpha
+
+[BG Park]
+type=normal
+spriteno=3,0
+start=0,40
+tile=1,0
+delta=.45,.65
+trans=addalpha
+
+[BG Floor]
+type=normal
+spriteno=2,0
+start=0,-170
+delta=.5,.7
+trans=addalpha
+
+[BG FG]
+type=normal
+spriteno=2,1
+start=0,-25
+layerno=1
+delta=1,1
+trans=addalpha
+
+[BG Sky2]
+type=normal
+spriteno=0,0
+layerno=1
+tile=1,1
+trans=add
+alpha=152,252

@@ -1,0 +1,246 @@
+;STAGE:
+;--------------------------------------------------------
+[Info]
+name = "DBZ - Torneio do Poder (Final)"
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -150
+boundright = 150
+boundhigh = -100
+boundlow = 0
+verticalfollow = .1
+floortension = 0
+tension = 50
+zoomin = 1
+zoomout = .5
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+;DEJAR ASI
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+;--------------------------------------------------------
+[Scaling]
+;DEJAR ASI CASI SIEMPRE
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+;--------------------------------------------------------
+[Bound]
+;DEJAR ASI
+screenleft = 15
+screenright = 15
+;--------------------------------------------------------
+[StageInfo]
+;NIVEL DEL SUELO
+zoffset = 220
+;PARA QUE GIRE SOLO
+autoturn = 1
+;DEJAR ASI
+resetBG = 0
+hires = 1
+;--------------------------------------------------------
+[Shadow]
+intensity = 90
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+;--------------------------------------------------------
+[Reflection]
+;DEL 0 AL 256
+intensity = 0
+;--------------------------------------------------------
+[Music]
+bgmusic  =sound/Chikara_Tournament_Final.mp3
+bgvolume = 255
+;========================================================
+; Main background definition
+[BGdef]
+ ;Sprites:
+spr = Chikara_Tournament_Final.sff
+debugbg = 0
+;================================================================================
+;              COMPONENTES DEL STAGE:
+;================================================================================
+[BG SKY]
+type = Normal
+spriteno = 0,2
+start = 0,0
+delta = 1,1
+Layerno = 0
+mask = 1
+
+[BG SKY FX]
+type = Anim
+Actionno = 3
+start = 0,0
+delta = 1,1
+Layerno = 0
+mask = 1
+
+[BG Polvo]
+type = Normal
+spriteno = 0,12
+start = 0,-400
+delta = 1,1
+Layerno = 0
+mask = 1
+Tile = 1,1
+Velocity = 1
+
+[BG Polvo]
+type = Normal
+spriteno = 0,12
+start = 200,-200
+delta = 1,1
+Layerno = 0
+mask = 1
+Tile = 1,1
+Velocity = 1
+
+[BG Polvo]
+type = Normal
+spriteno = 0,12
+start = 400,0
+delta = 1,1
+Layerno = 0
+mask = 1
+Tile = 1,1
+Velocity = 1
+
+[BG Rocas 1]
+type = Anim
+Actionno = 1
+start = 200,-100
+delta = 1.25,1.25
+Layerno = 0
+mask = 1
+
+[BG Rocas 2]
+type = Anim
+Actionno = 2
+start = 200,-100
+delta = 1.25,1.25
+Layerno = 0
+mask = 1
+
+[BG BACK]
+type = Anim
+Actionno = 4
+start = 0,100
+delta = 1.5,1.5
+Layerno = 0
+mask = 1
+
+[BG Polvo Arena]
+type = Normal
+spriteno = 0,13
+start = 0,400
+delta = 1.5,1.5
+Layerno = 0
+mask = 1
+Tile = 1,0
+Velocity = 2
+
+[BG Polvo Arena]
+type = Normal
+spriteno = 0,13
+start = 200,500
+delta = 1.5,1.5
+Layerno = 0
+mask = 1
+Tile = 1,0
+Velocity = 2
+
+[BG Floor]
+type = Normal
+spriteno = 0,0
+start = 0,360
+delta = 2,2
+Layerno = 0
+mask = 1
+
+[BG Polvo Arena]
+type = Normal
+spriteno = 0,13
+start = 400,570
+delta = 2,2
+Layerno = 1
+mask = 1
+Tile = 1,0
+Velocity = 2
+
+; Rocas Flotantes
+[Begin Action 1]
+0,3, 0,-1, 5
+0,3, 0,-2, 5
+0,3, 0,-3, 5
+0,3, 0,-4, 5
+0,3, 0,-3, 5
+0,3, 0,-2, 5
+0,3, 0,-1, 5
+0,3, 0,0, 5
+0,3, 0,1, 5
+0,3, 0,2, 5
+0,3, 0,3, 5
+0,3, 0,4, 5
+0,3, 0,3, 5
+0,3, 0,2, 5
+0,3, 0,1, 5
+0,3, 0,0, 5
+
+; Rocas Flotantes 2
+[Begin Action 2]
+0,4, 0,1, 5
+0,4, 0,2, 5
+0,4, 0,3, 5
+0,4, 0,4, 5
+0,4, 0,3, 5
+0,4, 0,2, 5
+0,4, 0,1, 5
+0,4, 0,0, 5
+0,4, 0,-1, 5
+0,4, 0,-2, 5
+0,4, 0,-3, 5
+0,4, 0,-4, 5
+0,4, 0,-3, 5
+0,4, 0,-2, 5
+0,4, 0,-1, 5
+0,4, 0,0, 5
+
+; Back Trucado
+[Begin Action 3]
+0,5, 0,0, 8, , AS256D0
+0,5, 0,0, 8, , AS200D50
+0,5, 0,0, 8, , AS150D100
+0,5, 0,0, 8, , AS100D150
+0,5, 0,0, 8, , AS50D200
+0,5, 0,0, 8, , AS100D150
+0,5, 0,0, 8, , AS150D100
+0,5, 0,0, 8, , AS200D50
+
+; Back Bajando
+[Begin Action 4]
+0,1, 0,0, 1500
+0,6, 0,0, 1500
+0,7, 0,0, 1500
+0,8, 0,0, 1500
+0,9, 0,0, 1500
+0,10, 0,0, 1500
+LoopStart
+0,11, 0,0, 1500

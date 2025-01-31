@@ -17,6 +17,10 @@ public class EnemyAi : MonoBehaviour
 
     public float health;
 
+    public float AttackDelay;
+
+    public static bool EnemyAttack;
+
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -35,6 +39,7 @@ public class EnemyAi : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        EnemyAttack = false;
     }
 
     private void Update()
@@ -45,7 +50,11 @@ public class EnemyAi : MonoBehaviour
 
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        if (playerInAttackRange && playerInSightRange)
+        {
+            EnemyAttack = true;
+            Invoke("AttackPlayer", AttackDelay);
+        }
     }
 
     private void Patroling()
@@ -87,7 +96,7 @@ public class EnemyAi : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            Debug.Log("Attack");
+            //Debug.Log("Attack");
 
             ///Attack code here
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
@@ -95,6 +104,7 @@ public class EnemyAi : MonoBehaviour
             rb.AddForce(transform.up * 8f, ForceMode.Impulse);
             ///End of attack code
 
+            EnemyAttack = false;
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
