@@ -36,12 +36,24 @@ public class HandAnim : MonoBehaviour
 
         if (Movement.hasPan == true)
         {
+            anim.SetBool("Pan", true);
+            anim.SetBool("No Plate", false);
+        }
+
+        if (Movement.hasPan == true)
+        {
             anim.SetTrigger("Pan");
+        }
+
+        if (Movement.hasPan == false)
+        {
+            anim.SetBool("Pan", false);
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             anim.SetTrigger("Throw");
+            anim.SetBool("Cup", false);
             anim.SetBool("Cup", false);
             anim.SetBool("No Plate", true);
         }

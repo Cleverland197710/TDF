@@ -45,7 +45,7 @@ public class Dish : MonoBehaviour
 
         if (speak == true && Input.GetKeyDown(KeyCode.Alpha1))
         {
-            appear();
+            //appear();
             isCup = true;
             Debug.Log("CupSpawned");
             Invoke("appear", 1.0f);
@@ -54,7 +54,7 @@ public class Dish : MonoBehaviour
 
         if (speak == true && Input.GetKeyDown(KeyCode.Alpha2))
         {
-            appear();
+            //appear();
             isPan = true;
             Debug.Log("PancakeSpawned");
             Invoke("appear", 1.0f);
@@ -63,7 +63,7 @@ public class Dish : MonoBehaviour
 
         if (speak == true && Input.GetKeyDown(KeyCode.Alpha3))
         {
-            appear();
+            //appear();
             isEgg = true;
             Debug.Log("EggSpawned");
             Invoke("appear", 1.0f);
@@ -85,6 +85,6 @@ public class Dish : MonoBehaviour
         isCup = false;
         isPan = false;
         isEgg = false;
-        speak = false;
+        //speak = false;
     }
 }
