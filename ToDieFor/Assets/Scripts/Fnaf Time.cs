@@ -24,14 +24,15 @@ public class FnafTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        elapsedTime += 2 * Time.deltaTime;
+        elapsedTime += 120 * Time.deltaTime;
         int minutes = Mathf.FloorToInt(elapsedTime / 60);
         int seconds = Mathf.FloorToInt(elapsedTime % 60);
         ShiftClock.text = string.Format("{0:00}:{1:00}PM",minutes ,seconds);
 
-        if (elapsedTime == 360)
+        if (minutes >= 6)
         {
-            elapsedTime = 360;
+            elapsedTime = 0;
+            Debug.Log("Complete");
             levelComplete = true;
         }
 
