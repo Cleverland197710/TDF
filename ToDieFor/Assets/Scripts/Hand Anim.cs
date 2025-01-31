@@ -18,9 +18,20 @@ public class HandAnim : MonoBehaviour
     {
         //Debug.Log(Movement.hasPlate);
 
+        if (Coffe.serving == true)
+        {
+            anim.SetBool("No Plate", true);
+        }
+
+        if (Pancake.serving == true)
+        {
+            anim.SetBool("No Plate", true);
+        }
+
         if (Movement.hasCup == false)
         {
             anim.SetBool("Cup", false);
+            anim.SetBool("No Plate", true);
         }
 
         if (Movement.hasPlate == false)
@@ -31,14 +42,18 @@ public class HandAnim : MonoBehaviour
         if (Movement.hasCup == true)
         {
             anim.SetBool("Cup", true);
+            anim.SetBool("Pan", false);
             anim.SetBool("No Plate", false);
         }
 
         if (Movement.hasPan == true)
         {
             anim.SetBool("Pan", true);
+            anim.SetBool("Cup", false);
             anim.SetBool("No Plate", false);
         }
+
+        Debug.Log(Movement.hasPan);
 
         if (Movement.hasPan == true)
         {

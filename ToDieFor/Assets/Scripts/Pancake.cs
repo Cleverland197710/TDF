@@ -9,7 +9,7 @@ public class Pancake : MonoBehaviour
 
     [SerializeField] LayerMask coffe;
     [SerializeField] LayerMask coffeLayer;
-    public bool serving;
+    public static bool serving;
     public static bool panBah;
 
     private void Awake()

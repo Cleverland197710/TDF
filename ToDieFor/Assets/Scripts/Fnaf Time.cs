@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class FnafTime : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class FnafTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        elapsedTime += 120 * Time.deltaTime;
+        elapsedTime += 3 * Time.deltaTime;
         int minutes = Mathf.FloorToInt(elapsedTime / 60);
         int seconds = Mathf.FloorToInt(elapsedTime % 60);
         ShiftClock.text = string.Format("{0:00}:{1:00}PM",minutes ,seconds);
@@ -34,6 +35,12 @@ public class FnafTime : MonoBehaviour
             elapsedTime = 0;
             Debug.Log("Complete");
             levelComplete = true;
+        }
+
+        if (levelComplete == true)
+        {
+            levelComplete = false;
+            SceneManager.LoadSceneAsync(2);
         }
 
     }

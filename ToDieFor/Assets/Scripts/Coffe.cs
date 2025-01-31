@@ -9,7 +9,7 @@ public class Coffe : MonoBehaviour
 
     [SerializeField] LayerMask coffe;
     [SerializeField] LayerMask coffeLayer;
-    public bool serving;
+    public static bool serving;
     public static bool cupBah;
 
     private void Awake()

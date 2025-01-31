@@ -48,7 +48,7 @@ public class Dish : MonoBehaviour
             //appear();
             isCup = true;
             Debug.Log("CupSpawned");
-            Invoke("appear", 1.0f);
+            Invoke("appear", .5f);
             //Debug.Log("Should BE Cup!");
         }
 
@@ -57,7 +57,7 @@ public class Dish : MonoBehaviour
             //appear();
             isPan = true;
             Debug.Log("PancakeSpawned");
-            Invoke("appear", 1.0f);
+            Invoke("appear", .5f);
             //Debug.Log("Should BE Cup!");
         }
 
@@ -66,7 +66,7 @@ public class Dish : MonoBehaviour
             //appear();
             isEgg = true;
             Debug.Log("EggSpawned");
-            Invoke("appear", 1.0f);
+            Invoke("appear", .5f);
             //Debug.Log("Should BE Cup!");
         }
     }
