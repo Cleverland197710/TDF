@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.35f1 (011206c7a712) revision 70150'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32682 MB
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 16295 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,7 @@ C:/Users/zpeart2024/Documents/GitHub/TDF/ToDieFor
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56084
+56891
 Successfully changed project path to: C:/Users/zpeart2024/Documents/GitHub/TDF/ToDieFor
 C:/Users/zpeart2024/Documents/GitHub/TDF/ToDieFor
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/zpeart2024/Documents/GitHub/TDF/ToDieFor
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12788] Host "[IP] 192.168.103.41 [Port] 0 [Flags] 2 [Guid] 2643745026 [EditorId] 2643745026 [Version] 1048832 [Id] WindowsEditor(7,122-06) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [30148] Host "[IP] 192.168.102.47 [Port] 0 [Flags] 2 [Guid] 4256659742 [EditorId] 4256659742 [Version] 1048832 [Id] WindowsEditor(7,214-18) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [12788] Host "[IP] 192.168.103.41 [Port] 0 [Flags] 2 [Guid] 2643745026 [EditorId] 2643745026 [Version] 1048832 [Id] WindowsEditor(7,122-06) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [30148] Host "[IP] 192.168.102.47 [Port] 0 [Flags] 2 [Guid] 4256659742 [EditorId] 4256659742 [Version] 1048832 [Id] WindowsEditor(7,214-18) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 18.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 20.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.35f1 (011206c7a712)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.35f1/Editor/Data/Resources/UnitySubsystems
@@ -70,7 +70,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.35f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.35f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.35f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56648
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.35f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -78,47 +78,47 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.35f1/
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.35f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.35f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.35f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.015195 seconds.
-- Loaded All Assemblies, in  0.359 seconds
+Registered in 0.015788 seconds.
+- Loaded All Assemblies, in  0.388 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 779 ms
+Android Extension - Scanning For ADB Devices 881 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.105 seconds
-Domain Reload Profiling: 1462ms
-	BeginReloadAssembly (125ms)
+- Finished resetting the current domain, in  1.196 seconds
+Domain Reload Profiling: 1582ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (135ms)
-		LoadAssemblies (127ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (140ms)
+		LoadAssemblies (146ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (130ms)
-			TypeCache.Refresh (129ms)
-				TypeCache.ScanAssembly (117ms)
+		AnalyzeDomain (134ms)
+			TypeCache.Refresh (133ms)
+				TypeCache.ScanAssembly (121ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (1105ms)
+	FinalizeReload (1197ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1059ms)
+		SetupLoadedEditorAssemblies (1152ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (904ms)
+			InitializePlatformSupportModulesInManaged (1002ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (106ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (108ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -126,680 +126,66 @@ Domain Reload Profiling: 1462ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file data-00000241F3C9E050 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file data-00000179836C7A70 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Assembly-CSharp.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F27BA070 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file data-0000017984F0FF20 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\KinoBloom.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2E41DE0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file data-00000179849D2AF0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\ToonyColorsPro.Demo.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2E6F800 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.dll
+Symbol file data-0000017984D7EF80 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXREditor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2020080 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-0000017984D7EF80 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXRDemo.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2E6F800 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2E6F800 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\KinoBloom.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2E91210 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2020080 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2020080 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2020080 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241EEBA7520 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2061890 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2584010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F25BB620 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F25BB620 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2A8B7F0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F401EE30 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241EEBAF530 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241EEBAF530 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\ToonyColorsPro.Demo.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F40417B0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3EEC020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F40417B0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F40417B0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3F0D030 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F40417B0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4135830 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXREditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3F25840 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3F46650 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2603440 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXRDemo.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3F50A60 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2603440 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4637430 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3F60130 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3F6D940 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3F50A60 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F40499C0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4637430 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3F50A60 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.759 seconds
-Refreshing native plugins compatible for Editor in 10.55 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.643 seconds
+Refreshing native plugins compatible for Editor in 7.47 ms, found 3 plugins.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.559 seconds
-Domain Reload Profiling: 1315ms
-	BeginReloadAssembly (168ms)
+- Finished resetting the current domain, in  0.525 seconds
+Domain Reload Profiling: 1166ms
+	BeginReloadAssembly (150ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
-	RebuildCommonClasses (30ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (28ms)
 	RebuildNativeTypeToScriptingClass (8ms)
 	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (513ms)
-		LoadAssemblies (437ms)
+	LoadAllAssembliesAndSetupDomain (417ms)
+		LoadAssemblies (374ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (192ms)
-			TypeCache.Refresh (168ms)
-				TypeCache.ScanAssembly (150ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (559ms)
+		AnalyzeDomain (147ms)
+			TypeCache.Refresh (128ms)
+				TypeCache.ScanAssembly (115ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (525ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (423ms)
+		SetupLoadedEditorAssemblies (400ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (35ms)
+			InitializePlatformSupportModulesInManaged (31ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (306ms)
-			ProcessInitializeOnLoadMethodAttributes (18ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 8.71 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3575 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 61 unused Assets / (1.8 MB). Loaded Objects now: 4031.
-Memory consumption went from 155.1 MB to 153.3 MB.
-Total: 3.075900 ms (FindLiveObjects: 0.217100 ms CreateObjectMapping: 0.162200 ms MarkObjects: 2.402700 ms  DeleteObjects: 0.293100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file data-00000241F23BC9A0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F473C020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4F19940 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002438084A070 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4F19940 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4F19940 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\KinoBloom.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380FD1020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F5481020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F5814010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3C54020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380CD5020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380FE1430 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002438081A010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3D05E40 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380A2F040 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F55FA010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2690010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4F19940 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4F19940 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\ToonyColorsPro.Demo.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380CD9830 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380A52E50 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380FD1020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024381142CB0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F5814010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380CD9830 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F5481020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXREditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2CBE700 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241EE9BB830 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380CD9830 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXRDemo.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380FD1020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380CD9830 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380386030 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024383977330 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243803BEA40 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024381830010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024381830010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243803EA030 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F54EAA40 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.464 seconds
-Refreshing native plugins compatible for Editor in 8.93 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.415 seconds
-Domain Reload Profiling: 1877ms
-	BeginReloadAssembly (153ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (27ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (244ms)
-		LoadAssemblies (318ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (21ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (1416ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (378ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (52ms)
-			ProcessInitializeOnLoadAttributes (269ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (293ms)
 			ProcessInitializeOnLoadMethodAttributes (16ms)
 			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 7.89 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3521 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (1.8 MB). Loaded Objects now: 4046.
-Memory consumption went from 142.0 MB to 140.2 MB.
-Total: 2.597400 ms (FindLiveObjects: 0.209900 ms CreateObjectMapping: 0.089100 ms MarkObjects: 2.024300 ms  DeleteObjects: 0.273100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file data-00000241F2642010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F473C020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C4A32360 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002438084A070 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C4A32360 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C4A32360 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\KinoBloom.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380FD1020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024381830010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F58B4FA0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F24096A0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380CD5020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F5901030 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3BDE030 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2160010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2F9C030 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024381882010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3BDE030 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F20CF6E0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F20CF6E0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\ToonyColorsPro.Demo.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380CD5020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024381882010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380FD1020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4FE6E70 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F58B4FA0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002438077B820 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4FE6E70 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXREditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2FBFE40 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241EEBA0020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002438189CE20 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXRDemo.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2FBFE40 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002438189CE20 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380F02020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3BDE030 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2FBFE40 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380FD1020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380FD1020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380F02020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241EEA0F010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.460 seconds
-Refreshing native plugins compatible for Editor in 7.95 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.540 seconds
-Domain Reload Profiling: 1996ms
-	BeginReloadAssembly (156ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (27ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (239ms)
-		LoadAssemblies (325ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (1540ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (467ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (337ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 9.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3521 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (1.8 MB). Loaded Objects now: 4061.
-Memory consumption went from 142.1 MB to 140.2 MB.
-Total: 2.839700 ms (FindLiveObjects: 0.217100 ms CreateObjectMapping: 0.083300 ms MarkObjects: 2.216300 ms  DeleteObjects: 0.322400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 184244.995476 seconds.
-  path: Assets/Scenes/Menu/Success/Success Day 1.unity
-  artifactKey: Guid(44492f1fff6f6e640b029beedf13bb75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu/Success/Success Day 1.unity using Guid(44492f1fff6f6e640b029beedf13bb75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '462bf85426ae93c3e75ed7a9c3a7484b') in 0.007731 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 62.694203 seconds.
-  path: Assets/Sprites
-  artifactKey: Guid(c44e0563ff7309845839932f90d9185d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites using Guid(c44e0563ff7309845839932f90d9185d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '8212c5e9bab17861e5065a5430f85145') in 0.000381 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.516458 seconds.
-  path: Assets/Sprites/User Interface/Bg's
-  artifactKey: Guid(6309ed379599c8142be20ae264bdaa5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's using Guid(6309ed379599c8142be20ae264bdaa5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '8a1c038c2ebc2adf0fb185b02676a30a') in 0.000410 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.075969 seconds.
-  path: Assets/Sprites/User Interface/Bg's/level success.png
-  artifactKey: Guid(2378ba145a4c67f4a87c54cf2f33a821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's/level success.png using Guid(2378ba145a4c67f4a87c54cf2f33a821) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '41f420e6e7fc5366423a8234d46bd60d') in 0.046478 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Sprites/User Interface/Bg's/level success4.png
-  artifactKey: Guid(efcf84636a1d5e34a914dc582f8a08c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's/level success4.png using Guid(efcf84636a1d5e34a914dc582f8a08c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'bf2b7f40ada07f6cab95e814f5621802') in 0.012279 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 25.007714 seconds.
-  path: Assets/Sprites/User Interface/Bg's/level success.png
-  artifactKey: Guid(2378ba145a4c67f4a87c54cf2f33a821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's/level success.png using Guid(2378ba145a4c67f4a87c54cf2f33a821) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'c046087f037ead99f94e0810fe7b0a99') in 0.025302 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 10.627852 seconds.
-  path: Assets/Sprites/User Interface/Bg's/level success2.png
-  artifactKey: Guid(5fb21c98a140fd8458d04c5a049c0d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's/level success2.png using Guid(5fb21c98a140fd8458d04c5a049c0d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'b4ebe1f3c3b8b3735fdeada93bed3d4b') in 0.009182 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 18.120928 seconds.
-  path: Assets/Sprites/User Interface/Bg's/level success3.png
-  artifactKey: Guid(4da390ee4bd5dab478afb8bfaa58dc9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's/level success3.png using Guid(4da390ee4bd5dab478afb8bfaa58dc9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '64e5089a73cbece28912342469c63bfd') in 0.012699 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 8.302412 seconds.
-  path: Assets/Sprites/User Interface/Bg's/level success4.png
-  artifactKey: Guid(efcf84636a1d5e34a914dc582f8a08c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's/level success4.png using Guid(efcf84636a1d5e34a914dc582f8a08c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '87a86fc1eec50c7fc0ab88d90f1fa808') in 0.009671 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 55.229660 seconds.
-  path: Assets/Sprites/User Interface/Bg's/level success.png
-  artifactKey: Guid(2378ba145a4c67f4a87c54cf2f33a821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's/level success.png using Guid(2378ba145a4c67f4a87c54cf2f33a821) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '3dbd660350cbc9f9bbb64dc48bef9e92') in 0.007949 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 49.601451 seconds.
-  path: Assets/Sprites/User Interface/Bg's/level success 1.png
-  artifactKey: Guid(0aac48b72baad854998f056d12977367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's/level success 1.png using Guid(0aac48b72baad854998f056d12977367) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '34aeec01384ba02abc45e68f930df84e') in 0.006764 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 19.656974 seconds.
-  path: Assets/Sprites/User Interface/Bg's/level success 1.png
-  artifactKey: Guid(0aac48b72baad854998f056d12977367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's/level success 1.png using Guid(0aac48b72baad854998f056d12977367) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'e7437e29eddc2c41a299ea8ad8215174') in 0.008888 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file data-00000241F4725370 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F422EA80 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2FE8010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C62F0020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024382FCFFB0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002438014CAF0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\KinoBloom.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241EEBA0020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2082020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C4917E10 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024383628470 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4FE6E70 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2AE2F10 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243832B7470 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380A7D030 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F43BE010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024381882010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F565F840 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F220BE60 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002438014CAF0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\ToonyColorsPro.Demo.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F220BE60 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024381882010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F27B2040 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F57411C0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024382ED20D0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F24DE010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F57411C0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXREditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024381D1DB60 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F51F6010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4725370 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXRDemo.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F57411C0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4725370 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024383997160 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243832B7470 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F5427020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380A67A50 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002438307FB70 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2AE2F10 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024380A67A50 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.464 seconds
-Refreshing native plugins compatible for Editor in 7.42 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.539 seconds
-Domain Reload Profiling: 1999ms
-	BeginReloadAssembly (160ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (239ms)
-		LoadAssemblies (330ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1539ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (442ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (34ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (64ms)
-			ProcessInitializeOnLoadAttributes (314ms)
-			ProcessInitializeOnLoadMethodAttributes (18ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 8.60 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 9.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3520 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (1.8 MB). Loaded Objects now: 4082.
-Memory consumption went from 141.9 MB to 140.1 MB.
-Total: 2.909500 ms (FindLiveObjects: 0.283300 ms CreateObjectMapping: 0.150300 ms MarkObjects: 2.199700 ms  DeleteObjects: 0.275400 ms)
+Unloading 3575 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 61 unused Assets / (1.8 MB). Loaded Objects now: 4031.
+Memory consumption went from 155.6 MB to 153.8 MB.
+Total: 2.562400 ms (FindLiveObjects: 0.200100 ms CreateObjectMapping: 0.089700 ms MarkObjects: 1.976000 ms  DeleteObjects: 0.295800 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
@@ -816,276 +202,21 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 52.128571 seconds.
-  path: Assets/Sprites/User Interface/Bg's/level success 1.png
-  artifactKey: Guid(0aac48b72baad854998f056d12977367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's/level success 1.png using Guid(0aac48b72baad854998f056d12977367) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  Time since last request: 92823.303278 seconds.
+  path: Assets/Sprites/User Interface/Buttons/exit button.png
+  artifactKey: Guid(4e6f632b1b9672744b3559fa2c71461c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/User Interface/Buttons/exit button.png using Guid(4e6f632b1b9672744b3559fa2c71461c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'dd531fad06f1e7742e6717f84acf6fb7') in 0.033515 seconds
+ -> (artifact id: '18583ed9c37106296b66d8c6ade1133c') in 0.044165 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 34.595310 seconds.
-  path: Assets/Sprites/User Interface/Bg's/level success.png
-  artifactKey: Guid(2378ba145a4c67f4a87c54cf2f33a821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/User Interface/Bg's/level success.png using Guid(2378ba145a4c67f4a87c54cf2f33a821) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  Time since last request: 648.967014 seconds.
+  path: Assets/Sprites/User Interface/Buttons/exit button.png
+  artifactKey: Guid(4e6f632b1b9672744b3559fa2c71461c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/User Interface/Buttons/exit button.png using Guid(4e6f632b1b9672744b3559fa2c71461c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '6cda892e3be4cdd5921a05384e0538ec') in 0.018256 seconds
+ -> (artifact id: '925d7305339a2383c369a26f1102891b') in 0.023833 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file data-00000241F24DE010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F422EA80 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F3BF0010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C62F0020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C5C88550 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F24DE010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\KinoBloom.Runtime.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F4530010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024381D1DB60 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C4DCE010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C609F0C0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F24E4320 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C6045D50 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243832B7470 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F2160010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F43BE010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F57B2020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C5DBF120 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241EEBB0030 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F24DE010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\ToonyColorsPro.Demo.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000002438014CAF0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F57B2020 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C4A2D350 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C5DDD910 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C5901150 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C5C88550 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C5DDD910 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXREditor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000024381D1DB60 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C606E030 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C5C88550 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\CFXRDemo.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C5DDD910 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C5D27BE0 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241F43BE010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243832B7470 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241E913D010 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C5DDD910 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243803BEA40 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000241EE30F360 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Cinemachine.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000243C5DDD910 doesn't match image C:\Users\zpeart2024\Documents\GitHub\TDF\ToDieFor\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.486 seconds
-Refreshing native plugins compatible for Editor in 8.72 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.398 seconds
-Domain Reload Profiling: 1882ms
-	BeginReloadAssembly (165ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (257ms)
-		LoadAssemblies (342ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (20ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (5ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1399ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (388ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (52ms)
-			ProcessInitializeOnLoadAttributes (278ms)
-			ProcessInitializeOnLoadMethodAttributes (17ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 7.38 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3520 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (1.8 MB). Loaded Objects now: 4097.
-Memory consumption went from 141.9 MB to 140.1 MB.
-Total: 2.521700 ms (FindLiveObjects: 0.224700 ms CreateObjectMapping: 0.092000 ms MarkObjects: 1.922600 ms  DeleteObjects: 0.281500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 560.535779 seconds.
-  path: Assets/Scenes/Game/Day 1.unity
-  artifactKey: Guid(361ed815b6a1abe4aae3c293de33c706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Game/Day 1.unity using Guid(361ed815b6a1abe4aae3c293de33c706) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '46feec96b72e0cec87e3c82cc4ce2597') in 0.004176 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 35.751891 seconds.
-  path: Assets/Prefab
-  artifactKey: Guid(5fe238d920b15eb4f98a5fefbecfcff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab using Guid(5fe238d920b15eb4f98a5fefbecfcff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '3d767bcca9845fed0220db34bb535e80') in 0.000502 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.091037 seconds.
-  path: Assets/Prefab/Bell.prefab
-  artifactKey: Guid(fd81b67771430344ebd26e594b0bd3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Bell.prefab using Guid(fd81b67771430344ebd26e594b0bd3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '34140cdfce233ab7ffd1a869b56bb267') in 0.072761 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 36
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Prefab/Kamikaze.prefab
-  artifactKey: Guid(5b52acaa602b53e48844723b8d247081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Kamikaze.prefab using Guid(5b52acaa602b53e48844723b8d247081) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'a706e442a36674fbdbcc9ef6cdeec17e') in 0.029549 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 123
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Prefab/Egg.prefab
-  artifactKey: Guid(b801f5b39c8b8bf45bb389f849c13aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Egg.prefab using Guid(b801f5b39c8b8bf45bb389f849c13aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '5be23a6eb95aaab537e6b6df1aa7b95f') in 0.091885 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 207
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Prefab/Pancake Order.prefab
-  artifactKey: Guid(a6d5563f0317a314d86253ff03ee41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Pancake Order.prefab using Guid(a6d5563f0317a314d86253ff03ee41e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '4fa41eb52cd7463da96c5c5840249d36') in 0.012122 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Prefab/Coffe Order.prefab
-  artifactKey: Guid(220a69100b7a7f34186bae757110c34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Coffe Order.prefab using Guid(220a69100b7a7f34186bae757110c34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '781ffa5e83730ddab987572c9f4076e3') in 0.015303 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Prefab/Cup Spawner.prefab
-  artifactKey: Guid(50798285d3656ab42af407b0a104bab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Cup Spawner.prefab using Guid(50798285d3656ab42af407b0a104bab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'aacbb38b2711c75918ad784cd11219f3') in 0.006595 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 52
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Prefab/Pojectile.prefab
-  artifactKey: Guid(922496d863fc18c49a4ba49fcd88280e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Pojectile.prefab using Guid(922496d863fc18c49a4ba49fcd88280e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '3388cee65f6bf9682ef4af0773c7d648') in 0.008305 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Prefab/Stool.prefab
-  artifactKey: Guid(1e882813e66655447b4ed4b106c1fd69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Stool.prefab using Guid(1e882813e66655447b4ed4b106c1fd69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '3a20a21eb291895236e567fb491a828d') in 0.009420 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Prefab/Player.prefab
-  artifactKey: Guid(12a431ff5561d9145ac9bc554a3f7988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab/Player.prefab using Guid(12a431ff5561d9145ac9bc554a3f7988) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '8969ad66f28d0056ca09dc50d65d1417') in 0.030859 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 67
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
