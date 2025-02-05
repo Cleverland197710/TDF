@@ -20,6 +20,16 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(3);
     }
 
+    public void Day1Comic()
+    {
+        SceneManager.LoadSceneAsync(4);
+    }
+
+    public void Day2Comic()
+    {
+        SceneManager.LoadSceneAsync(5);
+    }
+
     public void QuitGame()
     {
         Application.Quit();

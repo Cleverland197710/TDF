@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FOrC : MonoBehaviour
 {
-    public int maxNumberOfMissedCustomers = 1;
+    public int maxNumberOfMissedCustomers = 5;
     public int numberOfMissedCustomers = 0;
     public static bool levelFailed;
 
@@ -28,11 +28,13 @@ public class FOrC : MonoBehaviour
         if (Coffe.cupBah == true)
         {
             numberOfMissedCustomers++;
+            Coffe.cupBah = false;
         }
 
         if (Pancake.panBah == true)
         {
             numberOfMissedCustomers++;
+            Pancake.panBah = false;
         }
 
         if (levelFailed == true)

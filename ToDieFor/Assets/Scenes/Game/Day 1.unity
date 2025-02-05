@@ -3847,7 +3847,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885238779}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
@@ -4143,7 +4143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1373478693554884375, guid: 12a431ff5561d9145ac9bc554a3f7988, type: 3}
       propertyPath: mouseSensivity
-      value: 1000
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1760909253771654298, guid: 12a431ff5561d9145ac9bc554a3f7988, type: 3}
       propertyPath: hasEgg

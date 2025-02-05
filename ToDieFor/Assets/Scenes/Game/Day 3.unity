@@ -1668,7 +1668,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1885238784}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: Home
         m_Mode: 1
